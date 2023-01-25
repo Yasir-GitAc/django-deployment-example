@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document User</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>please sign up here</h1>
+    <form method="POST">
+      {{ form.as_p }}
+      {% csrf_token %}
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--<h1>Here are the user list of leveltwo_exe_app:</h1>
+  {# 'if users' it's going check if there is a user key is the dict sent from views #}
+  {% if users %}
+   <ol>
+    {% for person in users %}
+     <li>User Info</li>
+       <ul>
+         <li>First Name:{{person.first_name}}</li>
+         <li>Last Name:{{person.first_name}}</li>
+         <li>Email :{{person.first_name}}</li>
+       </ul>
+    {% endfor %}
+   </ol>
+  {% endif %}-->
+
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends "leveltwo_exe_app/base.html" %}
+
+{% block body_block %}
+  <h1>welcome,this is index.html page showing</h1>
+  <h2>go to /users/ to sign up</h2>
+  <h2>go to /leveltwo/relative to see relative url template tagging</h2>
+  <h2>path for /leveltwo/other is also setted up</h2>
+  {# no space between pipe operator #}
+  {# value(key_of_the_context_dict | name_of_filer:parameter_if_any) #}
+  {#<h2>{{ text|upper }}</h2>#}
+  <h2>{{ text|cut:'hello' }}</h2>
+  <h2>{{ number|add:'99' }}</h2>
+  {# to make custom filters we need to make new folder in the same level as the model
+    named'templatetags' then create a file '__init__.py' to tell django to treat this file as a module 
+    so it can be loaded and called upon.then make a new file that will house all the filters . #}
+{% endblock %}
